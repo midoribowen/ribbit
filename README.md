@@ -30,6 +30,10 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
+## Known Bugs
+
+* When a new question is created, it does not show immediately on the page. The page must be refreshed in order for it to show.
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details

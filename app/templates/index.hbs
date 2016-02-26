@@ -1,0 +1,11 @@
+<div class="row">
+  {{#each model as |question|}}
+    <div class="col-md-12 col-center">
+      {{question-tile question=question}}
+    </div>
+  {{/each}}
+</div>
+<br>
+<div class="container">
+  {{new-question saveQuestion="saveQuestion"}}
+</div>
