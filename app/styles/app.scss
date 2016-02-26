@@ -1,0 +1,54 @@
+img#header {
+  max-height: 480px;
+  width:100%;
+}
+
+.navbar {
+  background: linear-gradient(#375228, #54780d);
+  border: 1px solid #70d651;
+  .pull-left, #navbar-link {
+    color: white;
+    font-size: 22px;
+  }
+  .pull-left:hover {
+    color: #abdeae;
+    text-decoration: none;
+  }
+  #ribbit-icon {
+    height: 45px;
+    width: 45px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  #navbar-link:hover {
+    color: #abdeae;
+  }
+}
+
+body {
+  font-family: 'Buda';
+  font-size: 20px;
+  background-color: #97c181;
+  color: #412c1b;
+  button {
+  height: 50px;
+  width: 200px;
+  background-color: #e1ebdb;
+  border-radius: 50px;
+  border: none;
+  box-shadow: none;
+  }
+  #question-link {
+  color: #412c1b;
+  text-decoration: none;
+  }
+  #question-link:hover {
+    color: #215425;
+    text-decoration: underline;
+  }
+  #new-question:link {
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
