@@ -5,8 +5,18 @@
       <p>{{moment-format question.timestamp}}</p>
     </div>
     <div class="col-md-12 full-question-question">
-      <p>{{question.question}}</p>
+      <p>{{question.ribbit}}</p>
       <p>Notes: {{question.notes}}</p>
+    </div>
+  </div>
+  <div class="row actions">
+    <div class="col-md-3">
+      <br>
+      {{update-question question=question update="update"}}
+    </div>
+    <div class="col-md-3">
+      <br>
+      <button class="danger">Delete Question</button>
     </div>
   </div>
 </div>

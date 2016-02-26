@@ -1,0 +1,22 @@
+{{#if updateQuestionForm}}
+  <h3>Update Question</h3>
+  <div>
+    <form class="col-md-6">
+      <div class="form-group">
+        <label for="ribbit">Ribbit (question)</label>
+        {{input class="form-control" value=ribbit id="ribbit" placeholder=question.ribbit}}
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input class="form-control" value=author id="author" placeholder=question.author}}
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        {{input class="form-control" value=notes id="notes" placeholder=question.notes}}
+      </div>
+      <button {{action 'update' question}}><img id="ribbit-icon" src="assets/images/logo.png" alt="ribbit icon" />  RE-RIBBIT!</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateQuestionForm'}}>Update Question</button>
+{{/if}}
