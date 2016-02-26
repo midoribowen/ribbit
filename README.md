@@ -1,7 +1,12 @@
 # Ribbit
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### A Question and Answer Forum - Friday, February 26th, 2016
+
+#### By: Midori Bowen
+
+## Description
+
+This is a question and answer forum web application built with EmberJS. In Ribbit, a user can submit a question on the home page with additional notes and their name. Users can also edit questions. All questions are listed on the home page, sorted by the most recent question. A User interested in a question can click on a question link and submit answers to a question on that question's page.
 
 ## Prerequisites
 
@@ -39,9 +44,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Technologies Used
 
-Specify what it takes to deploy your app.
+* NodeJS, Bower, EmberJS
+* Additional Packages Installed: emberfire, ember-moment, ember-cli-sass, ember-bootstrap
 
 ## Further Reading / Useful Links
 
@@ -50,4 +56,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
