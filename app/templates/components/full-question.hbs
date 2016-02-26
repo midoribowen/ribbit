@@ -1,22 +1,47 @@
 <div class="container">
   <div class="row full-question">
-    <div class="col-md-12 full-question-header">
+    <div class="col-md-8 col-md-offset-2 full-question-header">
+      <h1>Question:</h1>
       <h4><em>( {{question.author}} )</em></h4>
       <p>{{moment-format question.timestamp}}</p>
     </div>
-    <div class="col-md-12 full-question-question">
+    <div class="col-md-8 col-md-offset-2 full-question-question">
       <p>{{question.ribbit}}</p>
       <p>Notes: {{question.notes}}</p>
     </div>
   </div>
-  <div class="row actions">
-    <div class="col-md-3">
+  <div class="row update">
+    <div class="col-md-3  col-md-offset-2">
       <br>
       {{update-question question=question update="update"}}
     </div>
-    <div class="col-md-3">
+  </div>
+
+  <div class="row answers">
+    <div class="col-md-8 col-md-offset-2">
       <br>
-      <button class="danger">Delete Question</button>
+      <br>
+      <hr>
+      {{new-answer question=question saveAnswer="saveAnswer"}}
+      <h2>Answers:</h2>
+    </div>
+      {{#each sortedAnswers as |answer|}}
+        <div class="col-md-8 col-md-offset-2 answer">
+          <p>{{moment-from-now answer.timestamp}}<br>
+             <em>( {{answer.author}} )</em>
+          </p>
+          <p>"{{answer.ribbit}}"</p>
+          <hr>
+        </div>
+      {{/each}}
+  </div>
+
+  <div class="row delete">
+    <div class="col-md-8 col-md-offset-2">
+      <br>
+      <br>
+      <br>
+      <button id="danger" {{action 'deleteQuestion' question}}>Delete Question</button>
     </div>
   </div>
 </div>

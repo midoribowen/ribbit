@@ -4,5 +4,5 @@ export default DS.Model.extend({
   ribbit: DS.attr(),
   author: DS.attr(),
   timestamp: DS.attr(),
-  questions: DS.belongsTo('question', {async: true})
+  question: DS.belongsTo('question', {async: true})
 });
