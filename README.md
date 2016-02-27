@@ -32,7 +32,6 @@ You will need the following things properly installed on your computer.
 
 ## Known Bugs
 
-* When a new question is created, it does not show immediately on the page. The page must be refreshed in order for it to show.
 * Sometimes when a question is updated, random fields that are not updated are cleared even though some fields also left blank will not be cleared.
 
 ### Code Generators
